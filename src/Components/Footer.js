@@ -10,21 +10,22 @@ import {
 import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { IoIosMailUnread, IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 function Footer() {
   return (
     <div className="container-fluid " style={{ backgroundColor: "#DFE6FF" }}>
       <div className="p-3">
         <div className="row">
-          <div>
+          {/* <div>
             <span className="d-flex justify-content-center gap-3 my-3">
               <RiInstagramFill size={30} />
-              <FaFacebookF size={30}/>
-              <FaLinkedinIn size={30}/>
-              <IoLogoWhatsapp size={30}/>
-              <FaYoutube size={30}/>
+              <FaFacebookF size={30} />
+              <FaLinkedinIn size={30} />
+              <IoLogoWhatsapp size={30} />
+              <FaYoutube size={30} />
             </span>
-          </div>
+          </div> */}
           <div className="col-lg-3 col-md-3 col-12 mb-3 d-flex flex-column justify-content-center">
             <h5 className="footerHeading mt-3">CloudECS Infotech</h5>
             <span className="d-flex flex-column my-2 ">
@@ -63,12 +64,13 @@ function Footer() {
           </span> */}
           </div>
           <div className="col-lg-3 col-md-3 col-12">
-            <div className="d-flex justify-content-center align-items-center flex-column">
+            <div>
               <h5 className=" mt-3">Pages</h5>
               <span className="d-flex flex-column my-2">
-                <span className="mb-2">Contact</span>
-                <span className="mb-2">Features</span>
-                <span className="mb-2">About</span>
+                
+                <NavLink className="nav-link mt-2 " to="/contact">Contact</NavLink>
+                <NavLink className="nav-link mt-2 " to="/feature">Feature</NavLink>
+                <NavLink className="nav-link mt-2 " to="/about">About</NavLink>
               </span>
             </div>
           </div>
@@ -90,7 +92,9 @@ function Footer() {
         className="d-flex flex-column align-items-center py-3"
         // style={{ backgroundColor: "rgba(61, 99, 234, 0.90)", color: "#fff" }}
       >
-        <span className="footerCopyrights">2024 © Copyright ECS Cloud Infotech. All Rights Reserved. </span>
+        <span className="footerCopyrights">
+          2024 © Copyright ECS Cloud Infotech. All Rights Reserved.{" "}
+        </span>
       </div>
     </div>
   );

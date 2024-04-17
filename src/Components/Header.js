@@ -15,11 +15,12 @@ function Header() {
   return (
     <>
       {["lg"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary">
           <Container fluid>
-            <Navbar.Brand href="#">
-              <img src={Logo} alt="WWG" className="img-fluid"/>
-            </Navbar.Brand>
+            <Navbar>
+            <Navbar.Brand as={Link} to="/home">
+              <img src={Logo} alt="WWG" className="img-fluid" style={{ maxWidth: "250px", maxHeight: "100px" }}/>
+            </Navbar.Brand></Navbar>
              {/* <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} /> 
             <Navbar.Offcanvas
@@ -47,7 +48,7 @@ function Header() {
                    }}
                  >
                    About</NavLink>
-                  <NavLink  
+                  {/* <NavLink  
                   to="/home"
                    exact
                    activeClassName="active"
@@ -55,7 +56,7 @@ function Header() {
                    style={{
                      color: "rgba(0, 0, 0, 0.85)",
                      textDecoration: "none",
-                   }}>Features</NavLink>
+                   }}>Home</NavLink> */}
                   <NavLink 
                    to="/contact"
                    exact
@@ -66,6 +67,16 @@ function Header() {
                      textDecoration: "none",
                    }}
                   >Contact</NavLink>
+                  <NavLink 
+                   to="/feature"
+                   exact
+                   activeClassName="active"
+                   className="custom-nav-link text-primary"
+                   style={{
+                     color: "rgba(0, 0, 0, 0.85)",
+                     textDecoration: "none",
+                   }}
+                  >Features</NavLink>
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}

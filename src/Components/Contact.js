@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 function Contact() {
   return (
     <section>
-      <div className=" container-fluid " style={{ backgroundColor: "#ECFAFE" }}>
+      <div className=" container-fluid p-4" style={{ backgroundColor: "#ECFAFE" }}>
         <div className="row contactCard">
           <div className="col-lg-6 col-md-6 col-12 contactColumn p-5 d-flex flex-column ">
             <div className="">
@@ -32,7 +32,7 @@ function Contact() {
                   >
                     <BiLogoGmail className="mb-1 text-primary " />
                   </span>
-                  &mailto:nbsp;&nbsp;info@ecscloudinfotech.com
+                  info@ecscloudinfotech.com
                 </span>
                 <span className=" mb-4 ">
                   <span

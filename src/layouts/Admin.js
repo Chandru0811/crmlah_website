@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "../Components/Contact";
 import Home from "../Components/Home";
 import About from "../Components/About";
+import Feature from "../Components/Feature";
 // import About from "../Components/About";
 // import Feature from "../Components/Feature";
 // import Contact from "../Components/Contact";
@@ -16,7 +17,7 @@ function Admin() {
         <Header />
         <Routes>
            <Route path="/about" element={<About />} />
-          {/* <Route path="/features" element={<Feature />} /> */}
+          <Route path="/feature" element={<Feature />} />
           <Route path="/home" element={<Home />} /> 
           <Route path="/contact" element={<Contact />} /> 
         </Routes>
