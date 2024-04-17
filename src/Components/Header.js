@@ -48,7 +48,7 @@ function Header() {
                  >
                    About</NavLink>
                   <NavLink  
-                  to="/features"
+                  to="/home"
                    exact
                    activeClassName="active"
                    className="custom-nav-link text-primary"
