@@ -1,0 +1,39 @@
+.volunteerBtn {
+    border-radius: 5px;
+    background: #ff3e54;
+    color: #ff3e54;
+    font-family: Eudoxus Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid #ff3e54;
+  }
+  .volunteerBtn:hover {
+    background: #ff001e;
+    color: #fff;
+  }  
+
+  .donateBtn {
+    border-radius: 5px;
+    background: #3d63ea;
+    width: 90px;
+    color: #3d63ea;
+    font-family: Eudoxus Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    line-height: normal;
+    background-color: transparent;
+    border: 2px solid #3d63ea;
+  }
+  
+  .donateBtn:hover {
+    background: #0037ff;
+    color: #fff;
+  }

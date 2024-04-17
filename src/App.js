@@ -1,10 +1,14 @@
+
 import './App.css';
+
 import Admin from './layouts/Admin';
+
 
 function App() {
   return (
     <div>
-      <Admin/>
+      <Admin />
+      
     </div>
   );
 }
